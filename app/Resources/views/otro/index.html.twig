@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    
+    <h2 class="page-header"> Lastest Otros </h2>
    <table class="table table-striped">
     <thead>
         <tr>
@@ -15,10 +15,13 @@
         <tr>
             <th scope="row">1</th>
             <td>Mark</td>
-            <td>Otto</td>
-            <td><a href="/otro/details/1" class="btn btn-success">Ver</a></td>
+            <td>Otto</td> 
+            <td><a href="/otro/details/1" class="btn btn-success">Ver</a>
+                <a href="/otro/edit/1" class="btn btn-default">Editar</a>
+                <a href="/otro/edit/1" class="btn btn-danger">Eliminar</a>
+            </td>
         </tr>
 
     </tbody>
-</table>
+</table> 
 {% endblock %}
