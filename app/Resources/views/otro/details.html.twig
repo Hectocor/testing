@@ -1,5 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    DETAILS
+    <a class="btn btn-default" href="/otro/index">Volver a Actividades</a>
+    <hr>
+    <h2 class="page-header">{{var_otro.name}}</h2>
+    
+    <ul class="list-group">
+        <li class="list-group-item">Categoría: {{var_otro.category}}</li>
+        <li class="list-group-item">Prioridad: {{var_otro.priority}}</li>
+        <li class="list-group-item">Termina: <strong>{{var_otro.date|date('F j, Y, g:i a')}}</strong></li>
+    </ul>
+    <h3 class="page-header">Descripción</h3>
+        <p>
+            {{var_otro.description}}
+        </p>
 {% endblock %}
